@@ -1,0 +1,53 @@
+*{
+    color: white;
+}
+.main{
+    background: rgb(36,170,25);
+    background: linear-gradient(90deg, rgba(36,170,25,1) 62%, rgba(14,62,4,1) 100%); 
+}
+
+.container{
+    background-color: green;
+    border-radius: 5px;
+    width: 35%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 100px;
+}
+
+.disco img{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 50%;
+    width: 400px;
+    height: 350px;
+    align-items: center;
+    animation: girar 4s linear infinite;
+}
+
+
+
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+
+
+.displaynone{
+    display: none;
+}
+
+/* Añadir esta clase dependiendo que cancion suene poner una clase con un display: block*/
+.displayblock{
+    display: block;
+}
