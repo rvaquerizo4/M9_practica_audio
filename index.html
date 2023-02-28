@@ -10,25 +10,28 @@
 <body class="main">
     <div class="container">
         <div class="disco">
-            <!--Añadir clase dependiendo que cancion suene poner una clase con un display: block-->
-            <img src="./images/card-6.jpg" alt="headset" class="">
-            <img src="./images/Fotografiadecomida.webp" alt="menjar" class="displaynone">
-            <img src="./images/fotos-gratis-de-stock-1.jpg" alt="camara" class="displaynone">
+            <img id="album-art" src="./images/card-6.jpg" alt="headset" class="">
+            <img id="album-art-2" src="./images/Fotografiadecomida.webp" alt="menjar" class="displaynone">
+            <img id="album-art-3" src="./images/fotos-gratis-de-stock-1.jpg" alt="camara" class="displaynone">
         </div>
-        <audio controls>
-            <source src="./audios/" type="">
-            <source src="./audios/" type="">
-            <source src="./audios/" type="">
+        <audio id="audio-player">
+            <source src="./audios/song1.mp3" type="audio/mpeg">
+            <source src="./audios/song2.mp3" type="audio/mpeg">
+            <source src="./audios/song3.mp3" type="audio/mpeg">
             Your browser does not support audio
         </audio>
         <div class="cancion">
-            <h2>Cancion 1</h2>
-            <h3>Artista</h3>
-            <p>Contador</p>
+            <h2><span id="song-name">Canción 1</span></h2>
+            <h3><span id="artist-name">Artista</span></h3>
+            <p id="song-duration">0:00</p>
         </div>
-        <div class="controls">
-            
+        <div class="controles">
+            <button id="play-pause-button">Play</button>
+            <button id="stop-button">Stop</button>
+            <input id="volume-slider" type="range" min="0" max="1" step="0.01" value="1">
         </div>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
