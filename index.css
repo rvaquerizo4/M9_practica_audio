@@ -8,7 +8,7 @@
 
 .container{
     background-color: green;
-    border-radius: 5px;
+    border-radius: 5%;
     width: 35%;
     height: 90%;
     display: flex;
@@ -17,6 +17,7 @@
     text-align: center;
     margin-left: 30%;
     margin-top: 100px;
+
 }
 
 .disco img{
@@ -29,6 +30,13 @@
     animation: girar 4s linear infinite;
 }
 
+.disco{
+  background-color: #126a16;
+  border-radius: 5%;
+  margin: 12px;
+}
+
+
 
 
   @keyframes girar {
@@ -40,7 +48,12 @@
     }
   }
   
-
+.controles{
+  border: solid 1px black;
+  margin: 12px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
 
 
 .displaynone{
