@@ -64,4 +64,6 @@
 .displayblock{
     display: block;
 }
-
+button{
+  width: 35px;
+}
